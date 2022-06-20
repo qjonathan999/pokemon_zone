@@ -36,11 +36,32 @@ body{
     background-color: #A0D995;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.btn-group{
+    display: flex;
+}
+
+.btn-group button{
+    background-color: #F7D716;
+    border-radius: 10px;
+    color: #F6FBF4;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    letter-spacing: 1.5px;
+    width: 9rem;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1rem;
+    text-transform:capitalize;
 }
 
 /*Componente derecho*/
@@ -50,11 +71,12 @@ body{
     color: #1B2430;
     position: fixed;
     top: 100px;
-    right: 100px;
+    right: 10px;
 }
 
 .right-content img{
     margin:2rem;
+    height: 12rem;
 }
 
 .right-content h1{

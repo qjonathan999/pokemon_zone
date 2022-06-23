@@ -13,9 +13,9 @@ body{
 
 /*Componente principal*/
 .container{
-    width: 90%;
+    width: 95%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
 }
 
@@ -28,20 +28,37 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
     grid-gap: 2rem;
+    padding: 10px;
 }
 
 /*Card contenedor de los pokemon*/
 .card{
-    width: 300px;
+    width: 19rem;
     background-color: #A0D995;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5);
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.8rem;
+    margin: 0.1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    transition: 0.2s linear;
+}
+
+.card:hover{
+    box-shadow: 6px 6px 6px 2px rgba(0,0,0,0.47);
+    background-color: #53BF9D;
+}
+
+.card h3{
+    color: #242424;
+    font-size: 0.95rem;
+}
+
+.card h2{
+    font-size: 1.3rem;
 }
 
 .btn-group{
@@ -49,29 +66,34 @@ body{
 }
 
 .btn-group button{
-    background-color: #F7D716;
-    border-radius: 10px;
-    color: #F6FBF4;
+    background-color: #47B5FF;
+    border-radius: 6px;
+    color: #20232A;
     cursor: pointer;
     outline: none;
     border: none;
     letter-spacing: 1.5px;
     width: 9rem;
     padding: 0.5rem;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 1rem;
-    text-transform:capitalize;
+    text-transform:uppercase;
+}
+
+.btn-group button:hover{
+    background-color: #61dafb;
 }
 
 /*Componente derecho*/
 .right-content{
-    width: 50%;
+    padding: 10px;
+    width: 44%;
     text-align: center;
     color: #1B2430;
     position: fixed;
-    top: 100px;
-    right: 10px;
+    top: 60px;
+    right: 34px;
 }
 
 .right-content img{
@@ -80,28 +102,34 @@ body{
 }
 
 .right-content h1{
+    color: #1966B3;
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .abilities{
-    width: 30%;
+    width: 80%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .group{
     background-color: #EB5353;
     color: #F2F2F2;
     padding: 0.6rem;
-    font-size: 12px;
+    font-size: 0.7rem;
     border-radius: 8px;
+    width: 8rem;
+    margin: 5px;
+    border: 2px #1B1A17 solid;
 }
 
 .base-stat{
-    margin: 2rem 0;
+    color: #2C3333;
+    margin: 2rem;
 }

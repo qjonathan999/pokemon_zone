@@ -25,7 +25,7 @@ const PokeInfo = ({ data }) => {
                         {
                             data.stats.map(poke=>{
                                 return(
-                                    <h3>{poke.stat.name}:{poke.base_stat}</h3>
+                                    <h3>{poke.stat.name} : {poke.base_stat}</h3>
                                 )
                             })
                         }

@@ -1,3 +1,8 @@
+# Pokemon Zone
+Start Date: 06/19/2022
+End Date: 06/23/2022
+Author: Nathan 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
